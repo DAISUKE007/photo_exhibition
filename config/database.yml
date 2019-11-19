@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: photo_exhibition_production
-  username: photo_exhibition
-  password: <%= ENV['PHOTO_EXHIBITION_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
