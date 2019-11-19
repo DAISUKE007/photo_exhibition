@@ -1,0 +1,37 @@
+
+= render "shared/header"
+%h2.content NEW ACCOUNT
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = render "devise/shared/error_messages", resource: resource
+  .field
+    = f.label :"名前"
+    %br/
+    = f.text_field :name, autofocus: true, autocomplete: "name", class: 'input'
+
+  .field
+    = f.label :"アカウント名"
+    %br/
+    = f.text_field :account_name, autofocus: true, autocomplete: "account_name", class: 'input'
+
+  .field
+    = f.label :email
+    %br/
+    = f.email_field :email, autofocus: true, autocomplete: "email", class: 'input'
+
+  .field
+    = f.label :password
+    - if @minimum_password_length
+      %em
+        (#{@minimum_password_length} 文字以上)
+    %br/
+    = f.password_field :password, autocomplete: "new-password", class: 'input'
+
+  .field
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation, autocomplete: "new-password", class: 'input'
+
+  .actions
+    = f.submit "登録", class: "submit-btn"
+
+= render "shared/footer"

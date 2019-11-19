@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// .wrapper {
+  
+// }
+
+.header {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  font-size: 20px;
+  position: fixed;
+  z-index: 1;
+  background-color: $sub;
+
+  .logo {
+    float: left;
+    font-family: $font;
+    font-weight: bold;
+    padding-left: 60px;
+  }
+
+  .h-menus {
+    padding-right: 40px;
+    font-size: 15px;
+    float: right;
+    display: inline-flex;
+    justify-content: space-between;
+
+    .account_name {
+      font-family: $font;
+      font-weight: bold;
+      color: $main;
+      padding: 0 20px;
+    }
+
+    .h-menu {
+      font-family: $font;
+      padding: 0 20px;
+    }
+  }
+}
+
+.main {
+  overflow-y: scroll;
+  text-align: center;
+  margin: 0 auto;
+
+  &__title {
+    color: $main;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    line-height: 500px;
+    height: 500px;
+    width: 100%;
+    background-image: url("title-image1.jpg");
+    background-size: cover;
+    background-position-y: -300px;
+    font-family: $font;
+  }
+
+  .main-contets {
+    background-color: $main;
+    margin: 0 auto;
+  }
+
+  .photo-title {
+    padding: 80px 0 40px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+
+    .photos {
+      display: flex;
+      
+
+    }
+  }
+
+  .image {
+    margin: 0 auto;
+    width: 30%;
+    margin: 20px;
+    float: left;
+
+  }
+
+  .title {
+    font-family: $font;
+    padding: 10px 20px 20px;
+  }
+}
+
+
+.footer {
+  padding: 40px;
+  height: 180px;
+  width: 100%;
+  background-color: $sub;
+  color: $main;
+
+  &__box {
+    margin: 0 auto;
+    padding-bottom: 80px;
+    font-family: $font;
+
+    .f-manus {
+      font-size: 15px;
+      float: left;
+      display: inline-flex;
+
+      .f-menu {
+        padding: 0 20px;
+      }
+    }
+    &__copy {
+      padding: 0 20px;
+      font-size: 10px;
+      float: right;
+    }
+  }
+  &__lists {
+    display: inline-flex;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    
+    .list {
+      a { color: $main; }
+      padding:0 20px;
+
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.show-photo {
+  text-align: center;
+
+  .show-image {
+    margin: 20px auto 20px;
+  }
+}

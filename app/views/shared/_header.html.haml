@@ -1,0 +1,16 @@
+.header
+  .logo
+    = link_to 'PHOTO EXHIBITION', root_path, class: 'link_tag'
+  %ul.h-menus
+    - if user_signed_in?
+      %li.account_name
+        = current_user.account_name
+      %li.h-menu
+        = link_to 'LOGOUT',  destroy_user_session_path, method: :delete, class: 'link_tag'
+      %li.h-menu
+        = link_to 'POST', new_photo_path, class: 'link_tag'
+    - else
+      %li.h-menu
+        = link_to 'NEW ACCOUNT',  new_user_registration_path, class: 'link_tag'
+      %li.h-menu
+        = link_to 'LOGIN',  user_session_path, method: :post, class: 'link_tag'

@@ -1,0 +1,25 @@
+.footer
+  .footer__box
+    %ul.f-manus
+      - if user_signed_in?
+        %li.f-menu
+          = link_to 'POST', new_photo_path, class: 'link_tag'
+        %li.f-menu
+          = link_to 'LOGOUT',  destroy_user_session_path, method: :delete, class: 'link_tag'
+      - else
+        %li.f-menu
+          = link_to 'LOGIN',  user_session_path, method: :post, class: 'link_tag'
+        %li.f-menu
+          = link_to 'NEW ACCOUNT',  new_user_registration_path, class: 'link_tag'
+    %p.footer__box__copy
+      © PHOTO EXHIBITION
+  %ul.footer__lists
+    %li.list
+      = link_to "https://twitter.com/" do
+        = fa_icon 'twitter', class: 'icon'
+    %li.list
+      = link_to "https://www.instagram.com/" do
+        = fa_icon 'instagram', class: 'icon'
+    %li.list
+      = link_to "https://www.facebook.com/" do
+        = fa_icon 'facebook-f', class: 'icon'

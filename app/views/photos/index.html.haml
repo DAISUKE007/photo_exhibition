@@ -1,0 +1,21 @@
+.wrapper
+  = render "shared/header"
+
+  .main
+    %p.main__title
+      ENGRAVED MEMORIES
+
+    .main-contets
+      .photo-title
+        POSTS
+      .photos
+        = render @photos
+
+      
+    -# %a= paginate(@photos)
+
+
+
+
+  = render "shared/footer"
+

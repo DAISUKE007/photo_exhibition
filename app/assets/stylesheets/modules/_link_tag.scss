@@ -1,0 +1,43 @@
+
+.link_tag {
+  text-decoration: none;
+}
+.link_tag::after {
+  border-bottom: solid 2px $accent;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+.link_tag:hover::after {
+  width: 100%;
+}
+
+a.link_tag:link{
+  color: $main;
+}
+a.link_tag:visited{
+  color: $main;
+}
+a.link_tag:hover{
+  color: #969696;
+}
+a.link_tag:active{
+  color: $accent;
+}
+
+
+i:link{
+  color: $main;
+}
+i:visited{
+  color: $main;
+}
+i:hover{
+  color: #969696;
+}
+i:active{
+  color: $accent;
+}

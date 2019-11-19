@@ -1,0 +1,17 @@
+= render "shared/header"
+.content NEW POST
+= form_for @photo do |f|
+  .field
+    %br/
+    = f.label :image, class: 'input' do
+      = fa_icon 'picture-o', class: 'icon'
+      = f.file_field :image, class: 'hidden'
+  .field
+    %br/
+    = f.text_field :title, class: 'input', placeholder: '(例）写真旅'
+  .field
+    %br/
+    = f.text_area :explanation, class: 'input', placeholder: '詳細'
+  .actions
+    = f.submit '投稿', class: 'new-post-submit-btn'
+

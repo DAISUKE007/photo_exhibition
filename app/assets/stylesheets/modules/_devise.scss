@@ -1,0 +1,79 @@
+.error_explanation {
+  color: red;
+}
+
+// .contents {
+//   height: calc(100vh - 180px);
+.content {
+  text-align: center;
+  padding: 100px 0 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.new_user, .new_photo {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.field {
+  font-size: 20px;
+  color: $sub;
+  font-family: $font;
+}
+
+.input {
+  height: 40px;
+  width: 30%;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  border-color: $sub;
+  margin: 20px auto;
+}
+
+.submit-btn {
+  font-family: $font;
+  height: 40px;
+  font-size: 20px;
+  width: 120px;
+  border-radius: 0%;
+  color: white;
+  background-color: $sub; 
+  margin: 40px auto;
+}
+
+.login-submit-btn {
+  font-family: $font;
+  height: 40px;
+  font-size: 20px;
+  width: 120px;
+  border-radius: 0%;
+  color: white;
+  background-color: $sub; 
+  margin-bottom: 170px;
+  margin: 40px auto 260px;
+}
+
+.new-post-submit-btn {
+  font-family: $font;
+  height: 40px;
+  font-size: 20px;
+  width: 120px;
+  border-radius: 0%;
+  color: white;
+  background-color: $sub; 
+  margin-bottom: 170px;
+  margin: 40px auto 150px;
+}
+
+
+.icon {
+  font-size: 60px;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
