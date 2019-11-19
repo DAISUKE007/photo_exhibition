@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
 
   def index
-    @photos = Photo.includes(:user).page(params[:page]).per(5).order("created_at DESC")
+    @photos = Photo.includes(:user).page(params[:page]).per(18).order("created_at DESC")
   end
   
   def new
