@@ -3,9 +3,10 @@
 = form_for @photo do |f|
   .field
     %br/
-    = f.label :image, class: 'input' do
+    = f.label :image, class: 'input', id: 'upload' do
       = fa_icon 'picture-o', class: 'icon'
       = f.file_field :image, class: 'hidden'
+    %span#preview_area
   .field
     %br/
     = f.text_field :title, class: 'input', placeholder: '(例）写真旅'

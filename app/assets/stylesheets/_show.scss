@@ -1,0 +1,65 @@
+.show-photo {
+  text-align: center;
+
+  .show-photo-btn
+
+  .show-image {
+    margin: 20px auto 20px;
+  }
+}
+
+.show-title {
+  margin: 50px auto;
+}
+
+.show-explanation {
+  margin: auto;
+  text-align: center;
+  width: 100vh;
+  font-size: 15px;
+  font-weight: 5;
+}
+
+.link_btn {
+  color: white; text-decoration: none;
+
+  .show-photo-btn {
+    font-size: 15px;
+    line-height: 40px;
+    height: 40px;
+    width: 150px;
+    background-color: $sub; 
+    margin: 50px auto;
+  }
+
+}
+
+
+.complete {
+  position: relative;
+
+  &__box {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-family: $font;
+    font-size: 20px;
+    a{color: white; text-decoration: none};
+
+
+    &__message {
+    }
+
+    &__btn {
+      line-height: 40px;
+      height: 40px;
+      width: 300px;
+      background-color: $sub; 
+      margin: 20px auto;
+    }
+  }
+}

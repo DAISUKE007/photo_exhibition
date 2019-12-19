@@ -2,5 +2,12 @@
 .content
   .show-photo
     = image_tag @photo.image.url, class: "show-image"
-  = @photo.title
-  = render "shared/footer"
+  .show-title
+    = @photo.title
+  .show-explanation
+    = @photo.explanation
+  - if user_signed_in? && @photo.user_id == current_user.id
+    = link_to  "/photos/#{@photo.id}", class: "link_btn", method: :delete do
+      .show-photo-btn
+        写真を削除する
+= render "shared/footer"
