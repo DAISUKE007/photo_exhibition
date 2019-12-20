@@ -8,18 +8,14 @@
   padding: 100px 0 40px;
   font-size: 30px;
   font-weight: bold;
-}
-
-.new_user,.new_photo {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-
-.field {
-  font-size: 20px;
-  color: $sub;
   font-family: $font;
+
+
+  .field {
+    font-size: 20px;
+    color: $sub;
+    font-family: $font;
+  }
 }
 
 .input {
@@ -53,6 +49,13 @@
   background-color: $sub; 
   margin-bottom: 170px;
   margin: 40px auto 260px;
+}
+
+
+.new_user,.new_photo {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
 .new-post-submit-btn {
