@@ -15,13 +15,13 @@
 .show-explanation {
   margin: auto;
   text-align: center;
-  width: 100vh;
+  width: 1000px;
   font-size: 15px;
   font-weight: 5;
 }
 
 .link_btn {
-  color: white; text-decoration: none;
+  color: $main; text-decoration: none;
 
   .show-photo-btn {
     font-size: 15px;
@@ -32,6 +32,10 @@
     margin: 50px auto;
   }
 
+}
+
+.link_btn:hover {
+  color: #969696; text-decoration: none;
 }
 
 
@@ -48,7 +52,7 @@
     text-align: center;
     font-family: $font;
     font-size: 20px;
-    a{color: white; text-decoration: none};
+    a{color: $main; text-decoration: none};
 
 
     &__message {
