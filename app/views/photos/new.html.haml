@@ -2,17 +2,18 @@
 .content NEW POST
 = form_for @photo do |f|
   .field
+    アイコンをクリックして写真を選択
     %br/
-    = f.label :image, class: 'input', id: 'upload' do
+    = f.label :image, class: 'input' do
       = fa_icon 'picture-o', class: 'icon'
-      = f.file_field :image, class: 'hidden'
-    %span#preview_area
+      = f.file_field :image, class: 'hidden', accept: "image/*"
+    %br/
   .field
     %br/
     = f.text_field :title, class: 'input', placeholder: '(例）写真旅'
   .field
     %br/
-    = f.text_area :explanation, class: 'input', placeholder: '詳細'
+    = f.text_area :explanation, class: 'input-explanation', placeholder: '詳細'
   .actions
     = f.submit '投稿', class: 'new-post-submit-btn'
 

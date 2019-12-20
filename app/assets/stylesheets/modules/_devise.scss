@@ -15,11 +15,32 @@
     font-size: 20px;
     color: $sub;
     font-family: "Century Gothic";
+
+    img {
+      width: 50px;
+    }
   }
 }
 
 .input {
   height: 40px;
+  width: 30%;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  border-color: $sub;
+  margin: 20px auto;
+
+  span {
+    display: block;
+  }
+  img {
+    width: 600px;
+  }
+}
+
+.input-explanation {
+  height: 160px;
   width: 30%;
   font-size: 15px;
   text-align: center;
@@ -74,6 +95,7 @@
 .icon {
   font-size: 60px;
   margin: 20px auto;
+  white-space: nowrap;
 }
 
 .hidden {

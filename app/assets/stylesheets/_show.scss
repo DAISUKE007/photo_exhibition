@@ -2,7 +2,7 @@
   text-align: center;
 
   .show-image {
-    width: calc(100% - 120px);
+    width: calc(100% - 500px);
     margin: 20px auto;
   }
 }
@@ -53,9 +53,6 @@
     font-size: 20px;
     a{color: $main; text-decoration: none};
 
-
-    &__message {
-    }
 
     &__btn {
       line-height: 40px;
