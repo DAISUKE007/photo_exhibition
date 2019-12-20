@@ -1,0 +1,19 @@
+- if user.errors.any?
+  - unless user.valid?
+    - if errors = user.errors.full_messages_for(column.to_sym)
+      %ul
+        - errors.each do |error|
+          %li.user-error-messages-signup=error
+
+:css
+  .user-error-messages-signup{
+    color: #ea352d;
+    margin: 5px auto 20px;
+    font-size: 15px;
+  }
+  .icon {
+  border-color: #ea352d;
+  }
+
+
+

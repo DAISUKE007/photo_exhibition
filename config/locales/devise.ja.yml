@@ -29,6 +29,9 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
+      photo:
+        image: 写真
+        title: タイトル
     models:
       user: ユーザ
   devise:
