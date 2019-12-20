@@ -22,15 +22,15 @@
 .link_btn {
   color: $main; text-decoration: none;
 
-  .show-photo-btn {
-    font-size: 15px;
-    line-height: 40px;
-    height: 40px;
-    width: 150px;
-    background-color: $sub; 
-    margin: 50px auto;
-  }
+}
 
+.show-photo-btn {
+  font-size: 15px;
+  line-height: 40px;
+  height: 40px;
+  width: 150px;
+  background-color: $sub; 
+  margin: 50px auto;
 }
 
 .link_btn:hover {

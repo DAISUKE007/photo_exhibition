@@ -5,12 +5,20 @@
     - if user_signed_in?
       %li.account_name
         = current_user.account_name
-      %li.h-menu
-        = link_to 'LOGOUT',  destroy_user_session_path, method: :delete, class: 'link_tag'
-      %li.h-menu
-        = link_to 'POST', new_photo_path, class: 'link_tag'
+      %li
+        = link_to destroy_user_session_path, method: :delete, class: 'link_tag' do
+          .h-menu
+            LOGOUT
+      %li
+        = link_to new_photo_path, class: 'link_tag' do
+          .h-menu
+            POST
     - else
-      %li.h-menu
-        = link_to 'NEW ACCOUNT',  new_user_registration_path, class: 'link_tag'
-      %li.h-menu
-        = link_to 'LOGIN',  user_session_path, method: :post, class: 'link_tag'
+      %li
+        = link_to new_user_registration_path, class: 'link_tag' do
+          .h-menu
+            NEW ACCOUNT
+      %li
+        = link_to user_session_path, method: :post, class: 'link_tag' do
+          .h-menu
+            LOGIN
